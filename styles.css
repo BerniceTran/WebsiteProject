@@ -1,6 +1,7 @@
 .page {
   display: flex;
   flex-direction: column;
+  /* flex-flow: row wrap; */
 }
 
 /* .page > * {
@@ -20,14 +21,6 @@
 
 h1 {
   margin: 0;
-}
-
-.big-heading {
-  font-family: Verdana;
-}
-
-.section-heading {
-  /* Add your own font here */
 }
 
 .nav {
@@ -84,9 +77,22 @@ h1 {
   list-style: none;
 }
 
+.link-item {
+  text-align: center;
+}
+
+.fab {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
 .right-content {
   width: 10%;
-  background-color: burlywood;
+  background: rgb(122, 4, 235)
 }
 
 .main-content {
@@ -100,4 +106,27 @@ h1 {
   padding: 100px 20px;
   background-color: #120458;
 
+}
+
+/* .page__content > *{
+  flex: 1 100%;
+} */
+
+@media (max-width: 600px) {
+  .page__content {
+    flex-direction: column;
+  }
+  .main-content {
+    order: 1;
+    flex: 2 0px;
+    width: auto;
+  }
+  .left-content {
+    order: 2; 
+    width: auto;
+  }
+  .right-content {
+    order: 3; 
+    width: auto;
+  }
 }
