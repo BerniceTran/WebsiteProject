@@ -8,16 +8,21 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <!--Link to our stylesheet-->
     <link rel="stylesheet" type="text/css" href="./styles.css" />
-    <title>My test pages</title>
+    <title>Bernice Tran</title>
   </head>
 
   <body class="page">
     <!--- PAGE HEADER WITH NAV BAR AND LOGO --->
     <header class="page__header">
       <nav class="nav">
+        <div class="logo">BT</div>
         <ol class="nav__list">
-          <li class="nav__list-item">About</li>
-          <li class="nav__list-item">Experience</li>
+          <li class="nav__list-item">
+            <a href="#about">ABOUT</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#experience">EXPERIENCE</a>
+          </li>
         </ol>
       </nav>
     </header>
@@ -26,8 +31,15 @@
     <div class="page__content">
 
       <!---Left column (will be small sidebar)--->
-      <div class="left-content">
-        This will become the left column. You will put links to your Github, LinkedIn, etc here.
+      <div orientation="left" class="left-content">
+        <ul class="links">
+          <li class="link-item">
+            LinkedIn
+          </li>
+          <li class="link-item">
+            Github
+          </li> 
+        </ul>
       </div>
 
       <!---Center column (will be page hero and content sections) --->
@@ -35,10 +47,11 @@
         <section id="hero" class="main-content__section">
           <div>
             <div>
-              <h1 class="big-heading">My Name Here</h1>
-              <h2>And what I do.</h2>
+              <h4>Hello world, my name is</h4>
+              <h1 class="big-heading">Bernice Tran</h1>
+              <h2></h2>
             </div>
-            <p>Here is where I will briefly describe myself.</p>
+            <p></p>
             <div>
               <a>Get in Touch</a>
             </div>
@@ -47,7 +60,7 @@
           <h2 class="section-heading">
             About Me
           </h2>
-          <p>Here is where I talk more about myself.</p>
+          <p></p>
         </section>
         <section id="experience" class="main-content__section">
           <h2 class="section-heading">
@@ -58,9 +71,12 @@
       </main>
 
       <!---Right column (will be empty space)--->
-      <div class="right-content">
+      <div orientation="right" class="right-content">
         This will become the right column. Leave this blank, or add something similar to the example website.
       </div>
     </div>
   </body>
+  
 </html>
+
+

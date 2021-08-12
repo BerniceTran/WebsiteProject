@@ -1,3 +1,23 @@
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .page > * {
+  flex: 1 100%;
+} */
+
+.page__header {
+  display: flex;
+  padding: 20px 40px;
+  background-color: #120458;
+}
+
+.page__content {
+  display: flex;
+  /* background-color: #120458 */
+}
+
 h1 {
   margin: 0;
 }
@@ -10,41 +30,74 @@ h1 {
   /* Add your own font here */
 }
 
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: white;
+}
+
 .nav__list {
-
+  display: flex;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  font-size: 1em;
 }
 
-.nav__list_item {
-
+.nav__list-item {
+  padding: 0 0 0 30px;
 }
 
-.page {
-
+.nav__list-item a{
+  /* padding: 10px; */
+  text-decoration: none;
+  color: white;
 }
 
-.page__header {
-  background-color: aqua;
-
-}
-.page__content {
-  background-color: beige;
-
+.nav__list-item a:hover{
+  color: #7a04eb;
 }
 
 .left-content {
-  background-color: burlywood;
+  width: 10%;
+  /* position: fixed;
+  bottom: 0px;
+  left: 40px;
+  right: auto; */
+  /* background-color: rgb(18, 4, 88, 0.1); */
+  background: rgb(122, 4, 235)
+}
 
+.links {
+  padding: 0px;
+  list-style: none;
 }
 
 .right-content {
+  width: 10%;
   background-color: burlywood;
 }
 
 .main-content {
-
+  /* padding: 0px 100px; */
+  width: 80%;
+  background-color: #120458;
+  color: white;
 }
 
 .main-content__section {
-  background-color: cornsilk;
+  padding: 100px 20px;
+  background-color: #120458;
 
 }
