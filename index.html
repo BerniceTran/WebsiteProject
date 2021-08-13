@@ -16,7 +16,7 @@
     <!--- PAGE HEADER WITH NAV BAR AND LOGO --->
     <header class="page__header">
       <nav class="nav">
-        <div class="logo">BT</div>
+        <div class="logo">Bernice Tran</div>
         <ol class="nav__list">
           <li class="nav__list-item">
             <a href="#about">ABOUT</a>
@@ -25,6 +25,11 @@
             <a href="#experience">EXPERIENCE</a>
           </li>
         </ol>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </div>
       </nav>
     </header>
 
@@ -50,9 +55,9 @@
             <div>
               <h4>Hello world, my name is</h4>
               <h1 class="big-heading">Bernice Tran</h1>
-              <h2></h2>
+              <h2>I like to code, game, and the outdoors.</h2>
             </div>
-            <p></p>
+            <p>I am an aspiring software engineer currently in the Per Scholas Full Stack Developer React program. </p>
             <div>
               <a>Get in Touch</a>
             </div>
@@ -61,7 +66,8 @@
           <h2 class="section-heading">
             About Me
           </h2>
-          <p></p>
+          <p>My name is Bernice Tran. I am an aspiring software engineer currently in the Per Scholas Full Stack Developer React Program.
+            If you had told me when I was younger that I would be studying computer science and building applications, I would have scoffed  </p>
         </section>
         <section id="experience" class="main-content__section">
           <h2 class="section-heading">
@@ -77,6 +83,29 @@
         This will become the right column. Leave this blank, or add something similar to the example website.
       </div>
     </div>
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navList= document.querySelector(".nav__list");
+
+      hamburger.addEventListener("click", mobileMenu);
+
+      function mobileMenu() {
+          hamburger.classList.toggle("active");
+          navList.classList.toggle("active");
+      }
+
+      // To close hamburger menu
+      const navLink = document.querySelectorAll(".nav__list-item");
+
+      navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+      function closeMenu() {
+          hamburger.classList.remove("active");
+          navList.classList.remove("active");
+      }
+    </script>
+
   </body>
   
 </html>
